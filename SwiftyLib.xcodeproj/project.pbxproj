@@ -112,7 +112,6 @@
 		685E22872538307900277847 = {
 			isa = PBXGroup;
 			children = (
-				685E22DF2538326A00277847 /* SwiftyLib.swift */,
 				685E22932538307900277847 /* SwiftyLib */,
 				685E229E2538307900277847 /* SwiftyLibTests */,
 				685E22B02538309A00277847 /* SwiftyLibExamples */,
@@ -137,6 +136,7 @@
 		685E22932538307900277847 /* SwiftyLib */ = {
 			isa = PBXGroup;
 			children = (
+				685E22DF2538326A00277847 /* SwiftyLib.swift */,
 				685E22942538307900277847 /* SwiftyLib.h */,
 				685E22952538307900277847 /* Info.plist */,
 			);
