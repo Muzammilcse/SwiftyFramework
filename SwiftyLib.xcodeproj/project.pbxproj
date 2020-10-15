@@ -18,6 +18,7 @@
 		685E22BE2538309C00277847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685E22BC2538309C00277847 /* LaunchScreen.storyboard */; };
 		685E22C92538309C00277847 /* SwiftyLibExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685E22C82538309C00277847 /* SwiftyLibExamplesTests.swift */; };
 		685E22D42538309C00277847 /* SwiftyLibExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685E22D32538309C00277847 /* SwiftyLibExamplesUITests.swift */; };
+		685E22E02538326A00277847 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685E22DF2538326A00277847 /* SwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		685E22CF2538309C00277847 /* SwiftyLibExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyLibExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		685E22D32538309C00277847 /* SwiftyLibExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLibExamplesUITests.swift; sourceTree = "<group>"; };
 		685E22D52538309C00277847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		685E22DF2538326A00277847 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		685E22872538307900277847 = {
 			isa = PBXGroup;
 			children = (
+				685E22DF2538326A00277847 /* SwiftyLib.swift */,
 				685E22932538307900277847 /* SwiftyLib */,
 				685E229E2538307900277847 /* SwiftyLibTests */,
 				685E22B02538309A00277847 /* SwiftyLibExamples */,
@@ -296,6 +299,7 @@
 				TargetAttributes = {
 					685E22902538307900277847 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 					685E22992538307900277847 = {
 						CreatedOnToolsVersion = 11.7;
@@ -381,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				685E22E02538326A00277847 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +586,7 @@
 		685E22A62538307900277847 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -596,6 +602,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swipbox.SwiftyLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -604,6 +611,7 @@
 		685E22A72538307900277847 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -627,6 +635,7 @@
 		685E22A92538307900277847 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -644,6 +653,7 @@
 		685E22AA2538307900277847 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
